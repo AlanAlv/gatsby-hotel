@@ -1,5 +1,6 @@
 import React from 'react';
-import { css } from '@emotion/core'
+import { css } from '@emotion/core';
+import Nav from './Nav';
 
 const Header = () => {
     return (  
@@ -29,6 +30,8 @@ const Header = () => {
                 >
                     Gatsby Hotel
                 </h1>
+
+                <Nav />
             </div>
         </header>
     );
