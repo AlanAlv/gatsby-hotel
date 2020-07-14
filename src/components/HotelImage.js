@@ -46,7 +46,6 @@ const HotelImage = () => {
             }
         }
     `);
-    console.log(image.sharp.fluid);
 
     return (  
         <ImageBackground 
