@@ -1,6 +1,14 @@
 import React from 'react';
 import { css } from '@emotion/core';
+import styled from '@emotion/styled';
 import Nav from './Nav';
+import { Link } from 'gatsby';
+
+const HomeLink = styled(Link)`
+    color:#FFF;
+    text-align: center;
+    text-decoration: none;
+`;
 
 const Header = () => {
     return (  
@@ -22,14 +30,11 @@ const Header = () => {
                     }
                 `}
             >
-                <h1
-                    css={css`
-                        color:#FFF;
-                        text-align: center;
-                    `}
+                <HomeLink
+                    to='/'
                 >
-                    Gatsby Hotel
-                </h1>
+                    <h1>Gatsby Hotel</h1>
+                </HomeLink>
 
                 <Nav />
             </div>
